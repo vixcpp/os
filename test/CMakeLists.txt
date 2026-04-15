@@ -1,0 +1,64 @@
+add_executable(vix_os_hostname_test hostname_test.cpp)
+target_compile_features(vix_os_hostname_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_hostname_test PRIVATE vix::os)
+add_test(NAME vix_os_hostname_test COMMAND vix_os_hostname_test)
+
+add_executable(vix_os_platform_test platform_test.cpp)
+target_compile_features(vix_os_platform_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_platform_test PRIVATE vix::os)
+add_test(NAME vix_os_platform_test COMMAND vix_os_platform_test)
+
+add_executable(vix_os_arch_test arch_test.cpp)
+target_compile_features(vix_os_arch_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_arch_test PRIVATE vix::os)
+add_test(NAME vix_os_arch_test COMMAND vix_os_arch_test)
+
+add_executable(vix_os_kernel_version_test kernel_version_test.cpp)
+target_compile_features(vix_os_kernel_version_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_kernel_version_test PRIVATE vix::os)
+add_test(NAME vix_os_kernel_version_test COMMAND vix_os_kernel_version_test)
+
+add_executable(vix_os_home_dir_test home_dir_test.cpp)
+target_compile_features(vix_os_home_dir_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_home_dir_test PRIVATE vix::os)
+add_test(NAME vix_os_home_dir_test COMMAND vix_os_home_dir_test)
+
+add_executable(vix_os_temp_dir_test temp_dir_test.cpp)
+target_compile_features(vix_os_temp_dir_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_temp_dir_test PRIVATE vix::os)
+add_test(NAME vix_os_temp_dir_test COMMAND vix_os_temp_dir_test)
+
+add_executable(vix_os_current_user_test current_user_test.cpp)
+target_compile_features(vix_os_current_user_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_current_user_test PRIVATE vix::os)
+add_test(NAME vix_os_current_user_test COMMAND vix_os_current_user_test)
+
+add_executable(vix_os_current_pid_test current_pid_test.cpp)
+target_compile_features(vix_os_current_pid_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_current_pid_test PRIVATE vix::os)
+add_test(NAME vix_os_current_pid_test COMMAND vix_os_current_pid_test)
+
+add_executable(vix_os_page_size_test page_size_test.cpp)
+target_compile_features(vix_os_page_size_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_page_size_test PRIVATE vix::os)
+add_test(NAME vix_os_page_size_test COMMAND vix_os_page_size_test)
+
+add_executable(vix_os_cpu_count_test cpu_count_test.cpp)
+target_compile_features(vix_os_cpu_count_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_cpu_count_test PRIVATE vix::os)
+add_test(NAME vix_os_cpu_count_test COMMAND vix_os_cpu_count_test)
+
+add_executable(vix_os_uptime_test uptime_test.cpp)
+target_compile_features(vix_os_uptime_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_uptime_test PRIVATE vix::os)
+add_test(NAME vix_os_uptime_test COMMAND vix_os_uptime_test)
+
+add_executable(vix_os_sleep_test sleep_test.cpp)
+target_compile_features(vix_os_sleep_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_sleep_test PRIVATE vix::os)
+add_test(NAME vix_os_sleep_test COMMAND vix_os_sleep_test)
+
+add_executable(vix_os_is_admin_test is_admin_test.cpp)
+target_compile_features(vix_os_is_admin_test PRIVATE cxx_std_20)
+target_link_libraries(vix_os_is_admin_test PRIVATE vix::os)
+add_test(NAME vix_os_is_admin_test COMMAND vix_os_is_admin_test)
