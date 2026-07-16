@@ -1,0 +1,56 @@
+{
+  "namespace": "vix",
+  "name": "os",
+  "displayName": "Vix OS",
+  "version": "0.2.1",
+  "type": "library",
+  "license": "MIT",
+  "description": "Cross-platform operating system information and utility APIs for Vix C++ projects.",
+  "repository": "https://github.com/vixcpp/os.git",
+  "documentation": "https://github.com/vixcpp/os#readme",
+  "include": "include",
+  "standard": "c++20",
+  "keywords": [
+    "vix",
+    "cpp",
+    "os",
+    "platform",
+    "system",
+    "portable"
+  ],
+  "authors": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Gaspard Kirira"
+    }
+  ],
+  "exports": {
+    "modules": [
+      "vix::os"
+    ],
+    "namespaces": [
+      "vix::os"
+    ]
+  },
+  "constraints": {
+    "platforms": [
+      "linux",
+      "macos",
+      "windows"
+    ]
+  },
+  "deps": [
+    {
+      "id": "vix/error",
+      "version": "0.3.1"
+    },
+    {
+      "id": "vix/path",
+      "version": "0.3.1"
+    }
+  ]
+}
