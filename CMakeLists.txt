@@ -202,6 +202,10 @@ else()
   add_library(vix_os INTERFACE)
   add_library(vix::os ALIAS vix_os)
 
+  set_target_properties(vix_os PROPERTIES
+    EXPORT_NAME os
+  )
+
   target_compile_features(vix_os INTERFACE cxx_std_20)
 
   target_include_directories(vix_os INTERFACE
